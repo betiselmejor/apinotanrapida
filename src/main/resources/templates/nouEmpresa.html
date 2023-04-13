@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<br>
+
+<div class="container">
+  <form th:action="@{/api/empresa/alta}" th:object="${empresa}" method="POST">
+
+    <div class="form-group row">
+      <input type="text" placeholder="Empresa CIF" th:field="${empresa.CIF}">
+    </div>
+    <div class="form-group row">
+      <input type="text" placeholder="Empresa Nom" th:field="${empresa.nom}">
+    </div>
+    <div class="form-group row">
+      <input type="text" placeholder="Empresa adresa" th:field="${empresa.adresa}">
+    </div>
+
+    <button class="btn btn-info col-2" type="submit">Enter</button>
+
+  </form>
+</div>
+
+</body>
+</html>

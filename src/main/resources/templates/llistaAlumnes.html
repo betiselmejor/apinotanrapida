@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-FmP7FJcbZ8rM7mFcKkGIoevDxbH5ux5K9skV1f/87vjv7YoyUS0ZkU6KuUwBL3qzVc76bxh9jcL7Zuuk+ZvY7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<div>
+    <h3>Alumnes</h3>
+    <table>
+        <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Cognom </th>
+            <th>Cicle</th>
+            <th>Modalitat</th>
+            <th>Estat</th>
+            <th>Empresa</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="alumne : ${alumnes}">
+            <td th:text="${alumne.id}"/>
+            <td th:text="${alumne.nom}"/>
+            <td th:text="${alumne.cognom}"/>
+            <td th:text="${alumne.cicle}"/>
+            <td th:text="${alumne.modalitat}"/>
+            <td th:text="${alumne.estat}"/>
+            <td th:text="${alumne.empresa}"/>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

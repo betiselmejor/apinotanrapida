@@ -1,0 +1,2 @@
+INSERT INTO Empresa (cif,id,nom,adresa) VALUES ('45A4DQ8DD',1,'Find a pharmacy','LA KELLY');
+INSERT INTO Alumne (nom,cognom,cicle,modalitat,estat) VALUES ('Arnau','8aflow','DAM','FCT','en ello estamos')
